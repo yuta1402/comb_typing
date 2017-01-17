@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* html { */
+			/* 	height: 100%; */
+			/* 	margin: 0 auto; */
+			/* 	display: table; */
+			/* } */
+            /*  */
+			/* body {  */
+			/* 	display: table-cell; */
+			/* 	vertical-align: middle; */
+			/* } */
+
+			html, body, #content {
+				height: 100%;
+			}
+
+			body {
+				animation: fadeIn 2s ease 0s 1 normal;
+			}
+
+			@keyframes fadeIn {
+				0% {opacity: 0}
+				100% {opacity: 1}
+			}
+
+			#content {
+				display: flex;
+				/* justify-content: center; */
+				justify-content: unset;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			#currentTime {
+				font-size: 32px;
+				text-align: center;
+			}
+
+			#word {
+				margin: 40px;
+				font-size: 48px;
+				text-align: center;
+			}
+
+			.typed {
+				color: #ccc;
+			}
+
+			.waiting {
+				color: #333;
+			}
+
+			#playerStatus {
+				display: flex;
+				justify-content: center;
+			}
+
+			#playerStatus div {
+				margin: 20px;
+				width: 180px;
+				border-bottom: 1px solid;
+				font-size: 20px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div id="currentTime"></div>
+			<div id="word">
+				<span class="typed"></span><span class="waiting"> </span>
+			</div>
+			<div id="playerStatus">
+				<div id="correct"></div>
+				<div id="miss"></div>
+				<div id="speed"></div>
+				<div id="combo"></div>
+				<div id="maxCombo"></div>
+			</div>
+		</div>
+
+		<script src="./app.js"></script>
+	</body>
+i/html>
